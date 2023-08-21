@@ -13,15 +13,7 @@
     }
   ],
   "env": {
-    "MONGO": "@MONGO",
-    "JWT_KEY": "@JWT_KEY",
-    "BASE_URL": "@BASE_URL",
-    "HOST": "@HOST",
-    "SERVICE": "@SERVICE",
-    "EMAIL_PORT": "@EMAIL_PORT",
-    "SECURE": "@SECURE",
-    "USER": "@USER",
-    "PASS": "@PASS",
-    "CoverId": "@CoverId"
+    "NODE_ENV": "production",
+    "API_SECRET_KEY": "your-secret-key"
   }
 }
