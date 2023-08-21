@@ -1,17 +1,27 @@
 {
-  {
-    "version": 2,
-    "builds": [
-      {
-        "src": "./index.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": ".vercel/routes/index.js"
+    }
+  ],
+  "env": {
+    "MONGO": "@MONGO",
+    "JWT_KEY": "@JWT_KEY",
+    "BASE_URL": "@BASE_URL",
+    "HOST": "@HOST",
+    "SERVICE": "@SERVICE",
+    "EMAIL_PORT": "@EMAIL_PORT",
+    "SECURE": "@SECURE",
+    "USER": "@USER",
+    "PASS": "@PASS",
+    "CoverId": "@CoverId"
   }
 }
