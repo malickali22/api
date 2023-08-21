@@ -13,15 +13,15 @@
     }
   ],
   "env": {
-    "MONGO": "@MONGO",
+    "MONGO_URI": "@MONGO",
     "JWT_KEY": "@JWT_KEY",
     "BASE_URL": "@BASE_URL",
-    "HOST": "@HOST",
-    "SERVICE": "@SERVICE",
-    "EMAIL_PORT": "@EMAIL_PORT",
-    "SECURE": "@SECURE",
-    "USER": "@USER",
-    "PASS": "@PASS",
-    "CoverId": "@CoverId"
+    "SMTP_HOST": "@HOST",
+    "SMTP_SERVICE": "@SERVICE",
+    "SMTP_EMAIL_PORT": "@EMAIL_PORT",
+    "SMTP_SECURE": "@SECURE",
+    "SMTP_USER": "@USER",
+    "SMTP_PASS": "@PASS",
+    "COVER_ID": "@CoverId"
   }
 }
